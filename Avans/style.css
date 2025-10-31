@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+  font-family: 'Roboto';
+  background-color: rgb(29, 24, 24);
+}
+html
+{
+ display: block;
+}
+header {
+    background: linear-gradient(135deg, #1b1b1d 0%, #282729 100%);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+.box
+{
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  font-size: 12px;
+  padding: 20px 40px;
+  
+}
+.nav-links 
+{
+  display: flex;
+  list-style: none;
+}
+ .nav-links li 
+{
+  margin-left: 2rem;
+}
+.nav-links a
+{
+ color: white;
+ text-decoration: none;
+ transition: color 0.3s;
+}
+.nav-links a:hover 
+{
+  color: #00ff88;
+}
+.box2
+{
+  width: 100px;
+  height: 100px;
+  top: 0;
+  padding: 150px 1000px;
+}
+.logo li
+{
+  color: #667eea;
+}
+.logo ul
+{
+ height: 100px;
+}
+.logo
+{
+ padding:0px 100px;
+ width: 650px;
+ height: 900px;
+}
+.logo li1
+{
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 36px;
+}
+.logo li2
+{
+ color: rgb(107, 107, 107);
+ font-weight: 300;
+ font-size: 15px;
+}
+.fasthow
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding-left: 30px 40px;
+}
+.logo button
+{
+  background: linear-gradient(135deg, #7a7a7a 0%, #7d9244 100%);
+  color: aliceblue;
+  font-size: 20px;
+  height: 200px 500px;
+  width: 20px 40px;
+
+}
+.slogo 
+{
+  width: 1000px;
+  height: 400px;
+  color: rgb(107, 107, 107);
+
+}
+.Bytton a
+{
+ color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
