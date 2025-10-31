@@ -1,0 +1,665 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2F343A;
+    color: #FFFFFF;
+    position: relative;
+    width: 1920px;
+    height: 3282px;
+}
+
+/* Верхняя линия */
+.top-line {
+    position: absolute;
+    width: 1920px;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+    background: #C8A35F;
+}
+
+.top-line-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 405px;
+    height: 100%;
+}
+
+.top-line-lang {
+    display: flex;
+    gap: 15px;
+}
+
+.top-line-lang span {
+    font-size: 12px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.top-line-lang span.active {
+    opacity: 1;
+}
+
+.top-line-lang span:not(.active) {
+    opacity: 0.5;
+}
+
+.top-line-contacts {
+    display: flex;
+    gap: 100px;
+}
+
+.top-line-contacts p {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/* Первая линия (навигация) */
+.first-line {
+    position: absolute;
+    width: 1110px;
+    height: 46px;
+    left: 405px;
+    top: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 39px;
+    height: 46px;
+    position: relative;
+}
+
+.logo-icon-part1 {
+    position: absolute;
+    left: 0%;
+    right: 0.3%;
+    top: 23.62%;
+    bottom: 0%;
+    background: #C8A35F;
+}
+
+.logo-icon-part2 {
+    position: absolute;
+    left: 13.24%;
+    right: 19.3%;
+    top: 23.66%;
+    bottom: 11.23%;
+    background: #FFFFFF;
+}
+
+.logo-icon-part3 {
+    position: absolute;
+    left: 0.29%;
+    right: 0%;
+    top: 0%;
+    bottom: 23.61%;
+    background: #FFFFFF;
+}
+
+.logo-icon-part4 {
+    position: absolute;
+    left: 19.3%;
+    right: 13.24%;
+    top: 11.23%;
+    bottom: 23.65%;
+    background: #C8A35F;
+}
+
+.logo-text {
+    width: 110px;
+    height: 22px;
+    position: relative;
+}
+
+.logo-text-line {
+    position: absolute;
+    height: 2px;
+    background: #FFFFFF;
+}
+
+.first-line-divider {
+    width: 46px;
+    height: 0px;
+    border: 1px solid #F2F2F2;
+    transform: rotate(90deg);
+}
+
+.first-line-contacts {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.first-line-contacts-icon {
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+
+.first-line-contacts-icon-line1 {
+    position: absolute;
+    left: 13.28%;
+    right: 13.42%;
+    top: 0%;
+    bottom: 0%;
+    background: #C8A35F;
+}
+
+.first-line-contacts-icon-line2 {
+    position: absolute;
+    left: 28.3%;
+    right: 28.44%;
+    top: 13.54%;
+    bottom: 43.19%;
+    background: #C8A35F;
+}
+
+.first-line-contacts-text {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+}
+
+.first-line-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.first-line-menu a {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Первый экран */
+.first-screen {
+    position: relative;
+    width: 1920px;
+    height: 620px;
+    left: 0px;
+    top: 145px;
+    background-image: url(assets/assets/trucking.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.first-screen h1 {
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.first-screen p {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 777px;
+}
+
+.first-screen-border {
+    position: absolute;
+    padding: 0px 400px;
+    width: 920px;
+    height: 245px;
+    border: 1px solid #C8A35F;
+}
+
+.mouse-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 50px;
+    opacity: 0.8;
+}
+
+.mouse-icon-line1 {
+    position: absolute;
+    left: 20.51%;
+    right: 20.66%;
+    top: 0%;
+    bottom: 0%;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.mouse-icon-line2 {
+    position: absolute;
+    left: 46.92%;
+    right: 47.08%;
+    top: 19.89%;
+    bottom: 60.3%;
+    background: #FFFFFF;
+}
+
+/* Услуги */
+.services {
+    position: absolute;
+    width: 1920px;
+    height: 561px;
+    left: 0px;
+    top: 765px;
+    display: flex;
+}
+
+.services-side {
+    width: 755px;
+    height: 561px;
+    background: #393F47;
+}
+
+.services-content {
+    flex: 1;
+    padding: 120px 405px 0 405px;
+}
+
+.services-title-line {
+    width: 90px;
+    height: 6px;
+    background: #C8A35F;
+    margin-bottom: 40px;
+}
+
+.services h2 {
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.services p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 50px;
+    max-width: 445px;
+}
+
+.services-button {
+    width: 220px;
+    height: 55px;
+    background: #C8A35F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-button span {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.services-image {
+    position: absolute;
+    width: 445px;
+    height: 266px;
+    left: 880px;
+    top: 931px;
+    background: #C4C4C4; /* Замените на реальное изображение */
+}
+
+.services-navigation {
+    position: absolute;
+    right: 405px;
+    top: 921px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.services-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.about-company-side
+{
+}
+
+.services-nav-arrow {
+    width: 65px;
+    height: 0px;
+    border: 3px solid #C8A35F;
+}
+
+.services-nav-text {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C8A35F;
+}
+
+/* Все услуги */
+.all-services {
+    position: absolute;
+    width: 1108px;
+    height: 504px;
+    left: 405px;
+    top: 1446px;
+}
+
+.all-services-title-line {
+    width: 90px;
+    height: 6px;
+    background: #C8A35F;
+    margin-bottom: 40px;
+}
+
+.all-services h2 {
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.all-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1px;
+}
+.services-title-line img
+{
+ padding: 0px 400px;
+}
+.service-item {
+    width: 276px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item.active {
+    background: #C8A35F;
+}
+
+.service-item:not(.active) {
+    background: #393F47;
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item.active .service-icon {
+    background: #FFFFFF;
+}
+
+.service-item:not(.active) .service-icon {
+    background: transparent;
+}
+
+.service-icon-inner {
+    width: 30px;
+    height: 30px;
+}
+
+.service-item.active .service-icon-inner {
+    background: #2F343A;
+}
+
+.service-item:not(.active) .service-icon-inner {
+    background: #FFFFFF;
+}
+
+.service-name {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* О компании */
+.about-company {
+    position: absolute;
+    width: 1110px;
+    height: 482px;
+    left: 405px;
+    top: 2070px;
+    display: flex;
+}
+
+.about-company-content {
+    flex: 1;
+}
+
+.about-company-side {
+    width: 410px;
+    height: 482px;
+    background: #393F47;
+}
+
+.about-company-title-line {
+    width: 90px;
+    height: 6px;
+    background: #C8A35F;
+    margin-bottom: 40px;
+}
+
+.about-company h2 {
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.about-company p {
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 445px;
+    margin-bottom: 60px;
+}
+
+.about-company-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1px;
+}
+
+.stat-item {
+    width: 200px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.25px solid #C8A35F;
+}
+
+.stat-item.white {
+    background: #FFFFFF;
+}
+
+.stat-item.image {
+    background: #C4C4C4; /* Замените на реальное изображение */
+}
+
+.stat-number {
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2F343A;
+}
+
+.stat-name {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.stat-desc {
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+/* Карта */
+.maps {
+    position: absolute;
+    width: 1920px;
+    height: 450px;
+    left: 0px;
+    top: 2672px;
+    background: linear-gradient(0deg, rgba(57, 63, 71, 0.6), rgba(57, 63, 71, 0.6)), url('maps.png');
+}
+
+/* Футер */
+.footer {
+    position: absolute;
+    width: 1920px;
+    height: 161px;
+    left: 0px;
+    top: 3121px;
+    background: #ccbea3;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 405px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo-icon {
+    width: 39px;
+    height: 46px;
+    position: relative;
+}
+
+.footer-logo-icon-part1 {
+    position: absolute;
+    left: 0%;
+    right: 0.3%;
+    top: 23.62%;
+    bottom: 0.01%;
+    background: #1D2A38;
+}
+
+.footer-logo-icon-part2 {
+    position: absolute;
+    left: 13.24%;
+    right: 19.3%;
+    top: 23.66%;
+    bottom: 11.23%;
+    background: #FFFFFF;
+}
+
+.footer-logo-icon-part3 {
+    position: absolute;
+    left: 0.29%;
+    right: 0%;
+    top: 0%;
+    bottom: 23.61%;
+    background: #FFFFFF;
+}
+
+.footer-logo-icon-part4 {
+    position: absolute;
+    left: 19.3%;
+    right: 13.24%;
+    top: 11.23%;
+    bottom: 23.65%;
+    background: #1D2A38;
+}
+
+.footer-logo-text {
+    width: 110px;
+    height: 22px;
+    position: relative;
+}
+
+.footer-logo-text-line {
+    position: absolute;
+    height: 2px;
+    background: #FFFFFF;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-contacts p {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.footer-contacts .address {
+    opacity: 0.8;
+    color: #F2F2F2;
+}
+
+.footer-contacts .email {
+    color: #2F343A;
+}
+
+.footer-phone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-phone p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #F2F2F2;
+}
+
+.footer-developer {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #2F343A;
+    align-self: flex-end;
+}
