@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гастро бар Горизонт - Новокуйбышевск</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">Гастро бар <span class="highlight">Горизонт</span></span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#events">События</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#reservation" class="btn btn-small">Забронировать</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Гастро бар <span class="highlight">Горизонт</span></h1>
+            <p>Изысканная кухня, неповторимая атмосфера и высочайший уровень сервиса в самом сердце Новокуйбышевска</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Посмотреть меню</a>
+                <a href="#reservation" class="btn btn-secondary">Забронировать столик</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>О нашем ресторане</h2>
+                <p>Узнайте больше о философии нашего заведения</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Гастро бар "Горизонт" - это место, где встречаются изысканный вкус и уютная атмосфера. Наша команда шеф-поваров создает уникальные блюда, сочетающие в себе традиции и современные тенденции мировой кухни.</p>
+                    <p>Мы тщательно отбираем только самые свежие и качественные продукты, чтобы каждое блюдо стало настоящим произведением искусства. Наш интерьер создает атмосферу тепла и комфорта, идеально подходящую как для романтического ужина, так и для деловой встречи.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Авторская кухня</h3>
+                            <p>Уникальные рецепты от нашего шеф-повара</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wine-glass-alt"></i>
+                            <h3>Винная карта</h3>
+                            <p>Богатый выбор вин со всего мира</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-music"></i>
+                            <h3>Живая музыка</h3>
+                            <p>По вечерам в пятницу и субботу</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Интерьер ресторана">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Меню -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наше меню</h2>
+                <p>Попробуйте наши лучшие блюда</p>
+            </div>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="starters">Закуски</button>
+                <button class="category-btn" data-category="mains">Основные блюда</button>
+                <button class="category-btn" data-category="desserts">Десерты</button>
+                <button class="category-btn" data-category="drinks">Напитки</button>
+            </div>
+            <div class="menu-items" id="menuItems">
+                <!-- Закуски -->
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Тартар из говядины">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Тартар из говядины</h3>
+                            <span class="price">650 ₽</span>
+                        </div>
+                        <p>Нежнейшая говядина с каперсами, луком и специями</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Брускетта с авокадо">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Брускетта с авокадо</h3>
+                            <span class="price">450 ₽</span>
+                        </div>
+                        <p>Хрустящий хлеб с авокадо, томатами и рукколой</p>
+                    </div>
+                </div>
+                <!-- Основные блюда -->
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Стейк Рибай">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Стейк Рибай</h3>
+                            <span class="price">1200 ₽</span>
+                        </div>
+                        <p>Премиальный стейк с овощами гриль и соусом песто</p>
+                    </div>
+                </div>
+                <!-- Десерты -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Тирамису">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Тирамису</h3>
+                            <span class="price">380 ₽</span>
+                        </div>
+                        <p>Классический итальянский десерт с кофе и маскарпоне</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-footer">
+                <a href="#" class="btn btn-outline">Посмотреть полное меню</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Галерея</h2>
+                <p>Увидите атмосферу нашего ресторана</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Интерьер ресторана">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1578474846611-3518cd9f94a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Блюдо от шеф-повара">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Барная стойка">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Веранда ресторана">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- События -->
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-title">
+                <h2>События</h2>
+                <p>Следите за нашими мероприятиями</p>
+            </div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Сентября</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Вечер живой музыки</h3>
+                        <p>Наслаждайтесь ужином под живые композиции джазового ансамбля</p>
+                        <span class="event-time">19:00 - 23:00</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">Сентября</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Дегустация вин</h3>
+                        <p>Сомелье представит подборку лучших итальянских вин</p>
+                        <span class="event-time">18:00 - 21:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бронирование -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="reservation-content">
+                <div class="reservation-text">
+                    <h2>Забронируйте столик</h2>
+                    <p>Обеспечьте себе незабываемый вечер в нашем ресторане. Забронируйте столик онлайн или по телефону.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +7 (846) 123-45-67</p>
+                        <p><i class="fas fa-clock"></i> Вс-Чт: 12:00 - 23:00, Пт-Сб: 12:00 - 01:00</p>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Количество гостей</option>
+                                <option value="1">1 человек</option>
+                                <option value="2">2 человека</option>
+                                <option value="3-4">3-4 человека</option>
+                                <option value="5+">5+ человек</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Забронировать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="section-title">
+                <h2>Контакты</h2>
+                <p>Приходите к нам в гости</p>
+            </div>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <h3>Гастро бар "Горизонт"</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Новокуйбышевск, ул. Мира, 15</p>
+                    <p><i class="fas fa-phone"></i> +7 (846) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@gorizont-nsk.ru</p>
+                    <p><i class="fas fa-clock"></i> Вс-Чт: 12:00 - 23:00, Пт-Сб: 12:00 - 01:00</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.236636322471!2d49.9463711769141!3d53.26928277233601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879f5d63b4b13%3A0x5f8b3c5e5c5e5c5e!2z0JPQvtGB0YLQvtCy0YvQuSDRg9C90LjQstC10YDRgdC40YLQtdGC!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-icon">🍽️</span>
+                        <span class="logo-text">Гастро бар <span class="highlight">Горизонт</span></span>
+                    </div>
+                    <p>Лучшие гастрономические впечатления в Новокуйбышевске</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Подписка на новости</h3>
+                    <p>Узнавайте первыми о наших акциях и новинках меню</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Гастро бар "Горизонт". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
